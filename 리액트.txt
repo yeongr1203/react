@@ -1,0 +1,76 @@
+설치방법
+
+리액트 폴더 원하는 곳에 만들기
+cmd 창 열고
+만든 폴더까지 경로 이동
+D:\react>npx create-react-app first-app
+엔터
+: first-app는 처음이라 붙인 것.
+그리고
+y 입력 후
+엔터
+설치완료.
+
+이후 비쥬얼 스튜디오로 first-app 폴더에서 오픈
+
+** index.html 이 스타트. -> 여기서 import함.
+root 를 찾기.
+app을 랜더링을 시켜서 안에 넣겠다!
+전부다 자바스크립트 형식으로 변경된 다음에 body안에 들어간다고 생각하면 됨.
+
+이제 cmd에서 실행.
+
+  cd first-app
+  npm start
+
+두개다 실행하면 
+http://localhost:3000/ 이라는 주소로 창이 켜짐.
+가상서버가 실행됨.
+
+이때, cmd창 끄면 안됨.
+
+VScode에서 src폴더에 Exam1.js 생성.
+
+외부로 설정하는 방법 배운 후
+
+Exam2.js 파일 생성.
+
+0번방에는 0 이 들었고, 1번 방에는 값을 넣을 수 있게 되어있다. 그래서 구조분할을 할 것인데, 
+
+Exam3.js 파일 생성 및 button.js생성
+
+Exam4.js 파일생성
+
+cmd 중지 후
+
+D:\react\first-app>npm i -s prop-types 설치
+( npm i(install) -s(save) 깔고싶은 라이브러리명 )
+
+package.json에 보면 prop-types 생성됨.
+
+Button.js 파일에서 Button.propTypes... 추가작업.
+->
+	import PropTypes from 'prop-types'; 
+	import해주고 
+	
+	Button.propTypes = {
+	    text: PropTypes.string.isRequired
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
