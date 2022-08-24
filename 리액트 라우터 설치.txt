@@ -1,0 +1,39 @@
+
+-- 리액트 라우터 설치
+D:\react\first-app>npm i -s react-router-dom
+
+설치 완료.
+src폴더 안에
+Home.js 파일 생성
+app.js에서 return() 괄호 안 내용 전체 삭제
+import logo 삭제 후 라우터 추가
+
+Home.js내용 추가
+App.js 수정
+index.js 수정
+
+app.js 파일에서
+<Router basename={process.env.PUBLIC_URL}>
+이거하는건 ?? 알기위해서?
+
+그리고 또 설치
+D:\react\first-app>npm i -s gh-pages
+그리고 빌드 실행
+D:\react\first-app>npm run build
+빌딩 완료.
+
+깃허브에 올릴수있도록 설정을 해야함.
+package.json에 
+{ } 안 맨 앞에
+"homepage":"https://_깃허브아이디_.github.io/{repository name}",
+추가 => "homepage":"https://.github.io/{repository name}",
+즉, name앞에 추가하는 것.
+
+
+scripts 에
+"predeploy": "npm run build", == 이거먼저 실행시키고 빌드 실행됨.
+"deploy": "gh-pages -d build",
+이거 두개 추가.
+
+
+
